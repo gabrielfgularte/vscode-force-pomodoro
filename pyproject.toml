@@ -3,16 +3,20 @@ name = "vscode-force-pomodoro"
 version = "0.1.0"
 description = "Locks the  Windows OS after N minutes working on VSCode so you can take a deserved (and forced) breath."
 authors = ["Gabriel Gularte <gabrielfgularte@gmail.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
-
+python = ">=3.12,<3.14"
+pygetwindow = "^0.0.9"
+pystray = "^0.19.5"
+pillow = "^11.2.1"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.11.4"
+ruff = "^0.11.7"
 pytest = "^8.3.5"
-pytest-cov = "^6.1.0"
+pytest-cov = "^6.1.1"
 freezegun = "^1.5.1"
+pyinstaller = "^6.13.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

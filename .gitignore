@@ -38,3 +38,8 @@ celerybeat.pid
 
 # VSCode
 .vscode/
+
+# PyInstaller
+/build/
+/dist/
+/*.spec
