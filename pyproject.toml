@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "vscode-force-pomodoro"
+version = "0.1.0"
+description = "Locks the  Windows OS after N minutes working on VSCode so you can take a deserved (and forced) breath."
+authors = ["Gabriel Gularte <gabrielfgularte@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.4"
+pytest = "^8.3.5"
+pytest-cov = "^6.1.0"
+freezegun = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 89
+target-version = "py312"
